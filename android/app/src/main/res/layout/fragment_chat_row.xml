@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/chatRowCV"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal">
+
+            <ru.nikartm.support.ImageBadgeView
+                android:id="@+id/chatRowProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                app:ibv_badgeValue="10"
+                app:ibv_badgeTextSize="9sp"
+                app:ibv_fixedBadgeRadius="10dp"
+                app:ibv_badgeTextStyle="bold"
+                app:ibv_badgeTextColor="#ffffff"
+                app:ibv_badgeColor="#e33232"
+                app:ibv_badgeLimitValue="true"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="10dp"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:id="@+id/chatRowName"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="last message"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:id="@+id/chatRowLastMsg"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_delete_outline_24"
+                android:backgroundTintMode="add"
+                android:id="@+id/chatRowDeleteBtn"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+</LinearLayout>

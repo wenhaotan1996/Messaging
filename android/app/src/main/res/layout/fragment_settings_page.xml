@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SettingsPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/settingProfilePic"
+            android:src="@drawable/ic_baseline_person_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="display name"
+            android:layout_gravity="center"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:id="@+id/settingDisplayName"/>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingEditProfile"
+        android:clickable="true"
+        app:cardElevation="5dp"
+        android:focusable="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit profile"
+            android:layout_marginVertical="8dp"
+            android:layout_marginStart="30dp"
+            style="@style/TextAppearance.MaterialComponents.Headline6" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingEditName"
+        android:clickable="true"
+        app:cardElevation="5dp"
+        android:focusable="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit name"
+            android:layout_marginVertical="8dp"
+            android:layout_marginStart="30dp"
+            style="@style/TextAppearance.MaterialComponents.Headline6" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingLogout"
+        android:clickable="true"
+        app:cardElevation="5dp"
+        android:focusable="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_marginVertical="8dp"
+            android:layout_marginStart="30dp"
+            style="@style/TextAppearance.MaterialComponents.Headline6" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

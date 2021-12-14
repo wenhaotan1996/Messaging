@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="8dp"
+    android:layout_height="wrap_content">
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        tools:layout="@layout/fragment_message_photo"-->
+<!--        android:id="@+id/messageBody"/>-->
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/messagePhoto"
+        android:src="@drawable/ic_baseline_insert_photo_24"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:id="@+id/messageProfile"/>
+
+
+</LinearLayout>
